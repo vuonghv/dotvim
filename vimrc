@@ -102,7 +102,7 @@ set nofoldenable  " Disable folding when opening files
 " CtrlP Vim Settings {{{
 let g:ctrlp_cmd = 'CtrlP' " default find in buffer
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/.git/*,*/.hg/*,*/.svn/*  " Exclude files or directories
-let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:10,results:10'
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:10,results:100'
 let g:ctrlp_switch_buffer = 'ET' " Jump to already opened windows anywhere
 let g:ctrlp_use_caching = 1 " Enable per-session caching
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp' " Set the directory to store the cache files
