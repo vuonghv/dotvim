@@ -135,8 +135,11 @@ let g:ycm_auto_start_csharp_server = 0
 let g:ycm_auto_stop_csharp_server = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_use_ultisnips_completer = 0
+let g:ycm_confirm_extra_conf = 1
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>gf :YcmCompleter GoToInclude<CR>
+nnoremap <leader>gt :YcmCompleter GetType<CR>
 " }}}
 
 " Color Scheme Configurations {{{
