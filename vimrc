@@ -140,6 +140,7 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>gf :YcmCompleter GoToInclude<CR>
 nnoremap <leader>gt :YcmCompleter GetType<CR>
+nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 " }}}
 
 " Color Scheme Configurations {{{
@@ -150,8 +151,8 @@ let g:solarized_bold=1
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 let g:solarized_degraded=0
-"colorscheme solarized
-colorscheme delek
+colorscheme solarized
+"colorscheme delek
 highlight Folded ctermbg=NONE " Turn off highlight folded
 " }}}
 
