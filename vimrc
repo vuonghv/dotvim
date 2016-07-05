@@ -193,6 +193,10 @@ let g:pymode_options_colorcolumn = 1
 let g:pymode_indent = 1
 " }}}
 
+" Coding style for different languages {{{
+autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" }}}
+
 set modeline
 set modelines=1
 " modeline vim:foldmethod=marker:foldlevel=0
