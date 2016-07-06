@@ -194,7 +194,13 @@ let g:pymode_indent = 1
 " }}}
 
 " Coding style for different languages {{{
-autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" Wrapping in an augroup ensures the autocmd's are only applied once.
+augroup codingstyle
+    autocmd!
+    autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+    autocmd Filetype c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+    autocmd Filetype cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+augroup END
 " }}}
 
 set modeline
