@@ -84,6 +84,8 @@ set formatoptions-=t
 " }}}
 
 " Searching {{{
+" search for visually selected text
+vnoremap // y/<C-R>"<CR>
 set incsearch  " Search as characters are entered
 set hlsearch  " Highlight matches
 " Turn off highlight search
@@ -136,6 +138,7 @@ let g:ycm_auto_stop_csharp_server = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_use_ultisnips_completer = 0
 let g:ycm_confirm_extra_conf = 1
+"let g:ycm_python_binary_path = 'python'
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>gf :YcmCompleter GoToInclude<CR>
