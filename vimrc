@@ -77,7 +77,8 @@ set lazyredraw " Redraw only when we need to
 set showmatch " Highlight matching [{()}]
 set title " Set Terminal title to the name of the buffer we are editing.
 set laststatus=2
-set statusline=%<%f\ %h%m%r%w%y%=%-14.([%L]\ \ \ %l,%c%V%)\ %P
+"set statusline=%<%f\ %h%m%r%w%y%=%-14.([%L]\ \ \ %l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%w%y\ \ \ \ %{fugitive#statusline()}\ \ \ \ %-14.([%L]\ \ \ %l,%c%V%)\ %P
 set textwidth=79
 set colorcolumn=+1
 set formatoptions-=t
@@ -138,7 +139,7 @@ let g:ycm_auto_stop_csharp_server = 1
 let g:ycm_cache_omnifunc = 0
 let g:ycm_use_ultisnips_completer = 0
 let g:ycm_confirm_extra_conf = 1
-"let g:ycm_python_binary_path = 'python'
+let g:ycm_python_binary_path = '/home/vuong/.pyenv/shims/python'
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>gf :YcmCompleter GoToInclude<CR>
@@ -204,6 +205,12 @@ augroup codingstyle
     autocmd Filetype c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
     autocmd Filetype cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 augroup END
+" }}}
+
+" vim-flake8 config {{{
+let g:flake8_quickfix_height=10
+" Run the Flake8 check every time you write a Python file
+"autocmd BufWritePost *.py call Flake8()
 " }}}
 
 set modeline
