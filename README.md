@@ -8,7 +8,7 @@ git clone https://github.com/vuonghv/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ### Upgrade all plugins:
