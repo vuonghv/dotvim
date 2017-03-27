@@ -213,6 +213,10 @@ let g:flake8_quickfix_height=10
 "autocmd BufWritePost *.py call Flake8()
 " }}}
 
+" NERDTree config {{{
+map <C-n> :NERDTreeToggle<CR>
+" }}}
+
 set modeline
 set modelines=1
 " modeline vim:foldmethod=marker:foldlevel=0
