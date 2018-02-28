@@ -46,3 +46,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-pyenv"]
+	path = bundle/vim-pyenv
+	url = https://github.com/lambdalisue/vim-pyenv
